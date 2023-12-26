@@ -12,16 +12,16 @@ string reverse(string S){
         Stack.push(C);
     }
     while(Stack.empty()==false){
-        cout<< Stack.top()<< " ";
         reversed_string+= Stack.top();
         Stack.pop();
     }
-    cout<<endl << reversed_string<< endl;
     return reversed_string;
 }
 
 int main(){
     string input="ABCD";
+    cout<< "Input string: "<< input<< endl;
     string output= reverse(input);
+    cout<< "Output string: "<< output<< endl;
     return 0;
 }
